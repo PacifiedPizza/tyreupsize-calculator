@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+h1{    color: #004a9a; 
+}
+h2, h3 {
+    color: #007bff; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.left-container, .right-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.left-container h2, .right-container h2 {
+    text-align: center;
+}
+
+.left-container button, .right-container button {
+    margin-top: 10px;
+}
+
+.result-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+button {
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838; 
+}
+.result-container p {
+    margin: 10px 0;
+}
+
+.result-container .value {
+    font-weight: bold;
+    color: #dc3545; 
+}
+
+.result-container .percentage {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.recommendation {
+    font-weight: bold;
+    color: #007bff;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .left-container, .right-container {
+        margin-right: 0;
+    }
+}

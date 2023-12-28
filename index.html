@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Calculation</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+
+    <h1>Stock to New Wheel Upsizing Calculation</h1>
+    <h2>Old Wheel Size</h2>
+    <label for="owidth">Width:</label>
+    <input type="number" id="owidth">
+    <label for="oratio">Ratio:</label>
+    <input type="number" id="oratio">
+    <label for="orimsize">Rim Size:</label>
+    <input type="number" id="orimsize">
+    <button onclick="Calculate1()">Calculate Old Wheel</button>
+
+    <h3>Results:</h3>
+    <label for="odiameter">Diameter:</label>
+    <input type="text" id="odiameter" readonly>
+    <label for="ocircumstance">Circumference:</label>
+    <input type="text" id="ocircumstance" readonly>
+
+    <h2>New Wheel Size</h2>
+    <label for="nwidth">Width:</label>
+    <input type="number" id="nwidth">
+    <label for="nratio">Ratio:</label>
+    <input type="number" id="nratio">
+    <label for="nrimsize">Rim Size:</label>
+    <input type="number" id="nrimsize">
+    <button onclick="Calculate2()">Calculate New Wheel</button>
+
+    <h3>Results:</h3>
+    <label for="ndiameter">Diameter:</label>
+    <input type="text" id="ndiameter" readonly>
+    <label for="ncircumstance">Circumference:</label>
+    <input type="text" id="ncircumstance" readonly>
+
+    <h2>Difference between Stock and New </h2>
+    <button onclick="Difference()">Calculate Difference</button>
+
+    <h3>Results:</h3>
+    <label for="difference">Diameter Difference:</label>
+    <input type="text" id="difference" readonly>
+    <label for="difference1">Circumference Difference:</label>
+    <input type="text" id="difference1" readonly>
+    <label for="percent">Percentage Difference:</label>
+    <input type="text" id="percent" readonly>
+<div class="result-container">
+    <p class="result">Difference in circumference: <span class="value">""mm</span> or <span
+            class="percentage">""%</span></p>
+    <p class="recommendation"> Recommending Upsizing only if the difference is less than 2%</p>
+</div>
+<script src="./index.js"></script>
+</body>
+
+</html>
